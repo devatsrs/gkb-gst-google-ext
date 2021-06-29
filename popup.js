@@ -551,8 +551,6 @@ async function updatePeriods() {
 
   const btnRefresh = getElement("refresh");
   btnRefresh.onclick = function (evt) {
-    reportButtonClicked(evt);
-
     getElement("banner-generating").hidden = true;
 
     const selectorGstReturnType = getElement("gstReturnType");
@@ -663,7 +661,6 @@ async function updateWorkspace() {
     const btnDownloadAll = getElement("btn-download-all");
     btnDownloadAll.hidden = false;
     btnDownloadAll.onclick = function (evt) {
-      reportButtonClicked(evt);
       downloadAll();
     };
 
@@ -672,7 +669,6 @@ async function updateWorkspace() {
     if (btnGenAll) {
       btnGenAll.hidden = false;
       btnGenAll.onclick = function (evt) {
-        reportButtonClicked(evt);
         generateAll();
       };
     }
@@ -758,7 +754,6 @@ async function updateRow(period) {
   btnDownload.hidden = false;
 
   btnDownload.onclick = function (evt) {
-    reportButtonClicked(evt);
     download(period);
   };
 
@@ -766,7 +761,6 @@ async function updateRow(period) {
     const btnGenerate = getElement(`btn-gen-${period.value}`);
     btnGenerate.hidden = false;
     btnGenerate.onclick = function (evt) {
-      reportButtonClicked(evt);
       generate(period);
     };
   }
@@ -829,7 +823,6 @@ async function updateRow2B(period) {
     btnDownload.hidden = false;
 
     btnDownload.onclick = function (evt) {
-      reportButtonClicked(evt);
       download(period);
     };
   }
@@ -1122,7 +1115,6 @@ async function updateWorkspaceForGstr9() {
 
   const btn = getElement(`btn-dl-g9-sys-${fy}`);
   btn.onclick = function (evt) {
-    reportButtonClicked(evt);
     downloadG9Sys(fy);
   };
 }
