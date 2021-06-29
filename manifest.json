@@ -1,0 +1,36 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [
+         "background.js"
+      ]
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Extension to quickly download GST returns from GST Portal",
+   "icons": {
+      "128": "images/gkbgst-logo-128.png",
+      "16": "images/gkbgst-logo-16.png",
+      "32": "images/gkbgst-logo-32.png",
+      "48": "images/gkbgst-logo-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk0gOfjC1ceQrjwlIpFLeyVZju7IvexWCwYBCzJy2RWtiWjp2lN+P4Cx23NByy2ZRc7silMJjxqw/AYWwcV7YaX06UnXqTaN/0ruojASi+pXRyMp0VVXOQHByYTiRSDB5lVc3a4XAqa5fWSuHeRWhcbBBKSzC29ubE42KPCDI2fUo6DmDk7hSAquZWjiGKMVxylDfiuXh90PtzyxU+JHZtI68KAi4Ry7W2L1TIWXMYXLkYg0fWMlQ0szEQFcGylqG3B8PQY1HlUXYe0DkutxwhsfGPxh/ku/V8Fqbvl3UM9PNBQi5Qon3BIiUtg1mOo2uVAimkNVJoNcygoD27FlO4wIDAQAB",
+   "manifest_version": 2,
+   "name": "GKB GST Assistant",
+   "page_action": {
+      "default_icon": {
+         "128": "images/gkbgst-logo-128.png",
+         "16": "images/gkbgst-logo-16.png",
+         "32": "images/gkbgst-logo-32.png",
+         "48": "images/gkbgst-logo-48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "permissions": [
+      "activeTab",
+      "declarativeContent",
+      "downloads",
+      "https://*.gst.gov.in/*"
+   ],
+   "short_name": "GKB GST",
+   "version": "1.0.0"
+}
